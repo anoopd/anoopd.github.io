@@ -1,0 +1,588 @@
+body{
+	height:100%;
+margin:0pt;
+padding:0pt;
+font-family:"arial",lucida grande,helvetica,sans-serif;
+font-size:14px;
+
+ line-height:12px;
+ 	
+}
+.fleft{
+	float: left;
+	padding:2px;
+	margin:5px;
+	border: 1px solid #8da416;
+	
+}
+.fright{
+	float: right;
+	padding:2px;
+	margin:5px 0 0 10px;
+	border: 1px solid #8da416;
+}
+#wrapper {
+margin:0pt auto;
+padding:0pt;
+width:1006px;
+}
+strong{
+	color:green;
+}
+
+#nav{
+		background: url(../images/menubg.gif) repeat-x scroll 0%;
+		height:70px;
+	}
+	
+	#nav ul{
+		list-style:none;
+	}
+	
+	#footer{
+	   clear: both;
+		background: url(../images/bgf.gif) repeat-x scroll 0%;
+		height:30px;
+		}
+		
+		
+		/*float menu*/
+		
+li ul {
+  display: none;
+  position: absolute; 
+  top: 1em;
+  left: 0;
+  }
+  
+  a{
+  	color:green;
+	text-decoration:none;
+  }
+
+  
+  li > ul {
+	top: auto;
+	left: auto;
+	}
+
+	
+	
+	li:hover ul { display: block; }
+	
+	li ul li{
+		float: none;
+	}
+		
+	
+#banner{
+	margin-top: 20px;
+	margin-left:20px;
+}
+ 
+
+ul.menu li{
+		 float: left;
+		 padding-left: 5px;
+		
+}
+
+
+  
+ .menu li a:link, .menu li a:visited
+	  {
+	  display: block;
+	  text-indent: -1000px;
+	  overflow:hidden;
+	  height:70px;
+	  	
+	  }
+     .menu li a:hover{
+     	background-position: 0px -78px;
+		height:70px;
+     }
+     .menu li a.selected
+	  {
+     	background-position: 0px 70px;
+		height: 70px;
+     }
+
+#home a{
+	  	background-image: url(../images/home.gif);
+		width:75px;
+	  }
+#about a{
+	  	background-image: url(../images/about.gif);
+		width:119px;}
+	  
+#inter a{
+	background-image: url(../images/inter.gif);
+		width:136px;
+}
+#appeal a{
+	background-image: url(../images/appeal.gif);
+		width:109px;
+}
+
+#future a{
+	background-image: url(../images/future.gif);
+		width:126px;
+}
+#contact a{
+	background-image: url(../images/contact.gif);
+		width:109px;
+}
+#news a{
+	background-image: url(../images/news.gif);
+		width:119px;
+}
+#gal a{
+	
+	background-image: url(../images/gal.gif);
+		width:78px;
+}
+
+#guest a{
+	background-image: url(../images/guest.gif);
+		width:114px;
+}
+
+.box1 {
+background:transparent url(../images/box.gif) no-repeat scroll center bottom;
+float:left;
+height:306px;
+margin-left:20px;
+width:224px;
+}
+
+#box4 {
+background:transparent url(../images/box1.gif) no-repeat scroll center bottom;
+float:left;
+height:322px;
+margin-left:15px;
+width:234px;
+}
+
+#head{
+	background:transparent url(../images/head.jpg) no-repeat;
+	height:79px;
+}
+
+#footer ul{
+	list-style-image: none;
+	  list-style-position:outside;
+	  list-style-type: none;
+	  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	  font-size:12px;
+	  padding-top:8px;
+}
+
+#footer ul li{
+	list-style-type:none;
+	display: inline;
+	color:white;
+	font-weight:bold;
+	margin: 1em 0 -.5em;
+	padding: 0 .5em 0 .5em;
+	line-height: 1.1em;
+}
+
+#footer a{
+	color:white;
+	text-decoration: none;
+}
+#footer a:hover{
+	color:#9eb21b;
+	text-decoration: none;
+}
+
+.clearboth{
+	clear: both;
+}
+
+#cont{
+   overflow: hidden;
+	margin-top:20px;
+	margin-left:20px;
+	background-color:#f3f3e9;
+	width:955px;
+	margin-bottom:10px;
+	height:auto;
+	min-height:100px;
+}
+
+#cont p{
+	text-align:justify;
+	color:#444334;
+  line-height:20px;
+}
+.head{
+	padding-top:12px;
+	padding-left: 11px;
+}
+
+#contleft {
+display:inline;
+float:left;
+padding-left:35px;
+padding-right:18px;
+
+padding-bottom: 10px;
+
+}
+#contright {
+display:inline;
+float:right;
+padding-left:35px;
+padding-right:18px;
+width:280px;
+padding-bottom: 10px;
+
+}
+
+input.btn{
+   color:#050;
+   font-family:'trebuchet ms',helvetica,sans-serif;
+   font-size:84%;
+   font-weight:bold;
+   background-color:#fed;
+   border:1px solid;
+   border-top-color:#696;
+   border-left-color:#696;
+   border-right-color:#363;
+   border-bottom-color:#363;
+   filter:progid:DXImageTransform.Microsoft.Gradient
+      (GradientType=0,StartColorStr='#ffffffff',EndColorStr='#ffeeddaa');
+		}
+		
+		
+		
+		
+		input.btnhov{
+   border-top-color:#c63;
+   border-left-color:#c63;
+   border-right-color:#930;
+   border-bottom-color:#930;}
+
+	
+	
+	blockquote.pullquote, div.pullquote {
+background:transparent url(../images/botq.jpg) no-repeat scroll right bottom !important;
+color:#575B60;
+font-family:Helvetica,Tahoma,Verdana,Arial,sans-serif;
+font-size:.8em;
+font-weight:bold;
+letter-spacing:-1px;
+line-height:1.1em;
+margin-top:30px;
+margin-left:10px;
+padding:0 15px 5px 0;
+text-align:left;
+width:90%;
+}
+
+blockquote.pullquote p, div.pullquote p {
+background:transparent url(../images/topq.jpg) no-repeat scroll left top !important;
+border:0 none;
+font-family:Helvetica,Tahoma,Verdana,Arial,sans-serif;
+font-size:1.2em;
+padding:5px 2px 10px 35px !important;
+}
+
+h3{
+	color: #444334;
+}
+
+ h4{
+	color: #8da416;
+	padding-top:5px;
+	text-decoration: underline;
+	margin:0px;
+}
+
+h5{
+	color: #8da416;
+	padding-top:5px;
+	display:inline;
+	margin:5px;
+	font-size:14px;
+	text-decoration: underline;
+}
+
+.thumbnail h5{
+	text-decoration: none;font-size:12px;
+}
+#cont1{
+   overflow: hidden;
+	
+	min-height:1%;
+	margin-top:20px;
+	margin-bottom:20px;
+	
+}
+#contleft1 {
+display:inline;
+float:left;
+padding-bottom:10px;
+padding-left:35px;
+padding-right:18px;
+width:790px;
+}
+
+
+
+
+.future ul{
+	list-style-image: url(../images/pen.png);
+	color:#444334;
+  line-height:20px;
+  text-align: justify;
+}
+
+.sadanam ul{
+	list-style-image:  url(../images/house.gif);
+	color:#444334;
+  line-height:20px;
+  text-align: justify;
+}
+.head1{
+	color: #8da416;
+	padding: 15px 20px;
+	font-weight:bold;
+	font-size:16px;
+	
+}
+
+.bim{
+	margin-left: 5px;
+	
+}
+
+.bcon ul{
+ list-style-image: url(../images/tick.png);
+ 
+}
+
+.bcon ul li{
+	padding-top: 3px;
+	
+}
+
+.bcon a:hover{
+	text-decoration: underline;
+}
+
+.more{
+	
+	float:right;
+	padding: 0px ;
+	font-weight:bold;
+	margin:0px;
+	margin-right:2px;
+	vertical-align: bottom;
+	background-image:url(../images/right.png);
+	background-position:right center;
+	background-repeat:no-repeat;
+    color:#391ABA;
+    padding-bottom:2px;
+	padding-right:16px;
+	text-align:right;
+	
+	}
+	
+
+
+.head2{
+	font-size:1.25em;
+	padding:10px 10px 0px 10px;
+	border-bottom: thin;
+	margin:0px 10px;
+	
+	
+}
+
+.news h5{
+	padding:0px 0px 0px 12px;
+	margin:5px;
+}
+.news p{
+	font-size: 12px;
+	padding-left:15px;
+	padding-top:2px;
+	padding-bottom: 2px;
+	margin:5px 15px 0px 15px;
+	border-bottom:1px solid;
+}
+.newsn{
+	color:#A9A59C;
+}
+
+.newsn p{
+	padding: 0pt 14px;
+	font-size: smaller;
+}
+.news h5{
+	color:#90a919;
+}
+.pagediv{
+	background:transparent url(../images/dottedline.gif) repeat-x scroll left bottom;
+	font-size:2px;
+	height:2px;
+	line-height:2px;
+	margin:10px 8px 3px 11px;
+}
+
+form label { 
+	display: block;  /* block float the labels to left column, set a width */
+	float: left; 
+	width: 150px; 
+	padding: 0; 
+	margin: 5px 0 0; /* set top margin same as form input - textarea etc. elements */
+	text-align: right; 
+}
+
+form {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */
+  font:100% verdana,arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 500px;
+  max-width: 600px;
+  width: 560px; 
+}
+
+form fieldset {
+  / * clear: both; note that this clear causes inputs to break to left in ie5.x mac, commented out */
+  border-color: #000;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;        /* padding in fieldset support spotty in IE */
+  margin: 0;
+}
+
+form fieldset legend {
+	font-size:1.1em; /* bump up legend font size, not too large or it'll overwrite border on left */
+                       /* be careful with padding, it'll shift the nice offset on top of border  */
+}
+
+form fieldset label:first-letter { /* use first-letter pseudo-class to underline accesskey, note that */
+	text-decoration:underline;    /* Firefox 1.07 WIN and Explorer 5.2 Mac don't support first-letter */
+                                    /* pseudo-class on legend elements, but do support it on label elements */
+                                    /* we instead underline first letter on each label element and accesskey */
+                                    /* each input. doing only legends would lessen cognitive load */
+}
+
+form input, form textarea {
+	display: inline; /* inline display must NOT be set or will hide submit buttons in IE 5x mac */
+	width:auto;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+	margin:5px 0 0 10px; /* set margin on left of form elements rather than right of
+                              label aligns textarea better in IE */
+}
+
+.buttons{
+	background: #e3e3db;
+	font-size:12px; 
+	color: #8da416; 
+	padding: 6px 14px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #fff #d8d8d0 #d8d8d0 #fff;
+	text-decoration: none;
+	text-transform:uppercase;
+	font-weight:bold;
+	margin-left: 5%;
+}
+
+/*table style*/
+th {
+	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica,
+	sans-serif;
+	color: #6D929B;
+	border-right: 1px solid #667902;
+	border-bottom: 1px solid #667902;
+	border-top: 1px solid #667902;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 6px 6px 6px 12px;
+	background: #c9dc68 url(../images/bg_header.jpg) no-repeat;
+}
+
+
+#people {
+border:1px solid #8DA416;
+border-collapse:collapse;
+font-family:"Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+font-size:12px;
+margin:45px;
+text-align:left;
+width:480px;
+}
+thead {
+display:table-header-group;
+vertical-align:middle;
+}
+tr {
+display:table-row;
+vertical-align:inherit;
+}
+#people th {
+border-bottom:1px dashed #8DA416;
+color:#667902;
+font-size:14px;
+font-weight:normal;
+padding:12px 17px;
+}
+
+tr {
+display:table-row;
+vertical-align:inherit;
+}
+#people td {
+color:#667902;
+padding:7px 17px;
+}
+
+/*float menu*/
+
+
+
+
+
+/* ends here */
+
+.fcenter{
+	padding:2px;
+	margin:5px;
+	border: 1px solid #8da416;
+}
+
+ol,ul{
+ color:#444334;
+}
+
+ol li,ul li{
+	line-height: 1.9em;
+}
+
+.black{
+	color: #000000;
+	text-decoration: none;
+}
+
+
+/*image gal8*/
+
+
+.thumbnail
+{
+float: left;
+
+border: 1px solid #8da416;
+margin: 0 15px 15px 0;
+padding:5px 10px 5px 5px;
+text-align:center;
+text-decoration: none;
+}
+
+
+

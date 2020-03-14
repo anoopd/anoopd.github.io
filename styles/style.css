@@ -1,0 +1,104 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+    /*background: url('../images/443.jpg');*/
+    background-color: #2b2b2b;
+    background-size: cover;
+    font-family: "Avenir Next", "Helvetica neue", Helvetica, sans-serif;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:"header"
+                        "main-content";
+
+}
+
+.header {
+    grid-area: header;
+}
+
+.logo {
+    margin: 2rem auto;
+    padding-left: 4rem;
+    /*color: #2b2b2b;*/
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+    background: url('../images/animated_text_fill.png') repeat-y;
+    -webkit-background-clip: text;
+	  background-clip: text;
+        -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+       -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+.logo h1 span{
+    font-weight:600;
+}
+
+
+.main-content {
+    grid-area: main-content;
+    margin: 0 auto;
+    }
+
+
+    .main-content h1{
+        font-size: 5rem;
+        color: #FFF;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+
+    .console-container {
+
+  font-size:4em;
+  font-weight: 500;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}

@@ -1,0 +1,261 @@
+/************************
+*  Basic Reset Styles  *
+************************/
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: "Avenir Next", "Helvetica neue", Helvetica, sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/********************
+ *  Header Section  *
+ ********************/
+
+.header {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    display: grid;
+    grid-template-areas: "logo menu";
+    grid-template-columns: 50% 50%;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    backdrop-filter: grayscale(1) invert(1) blur(4px);
+}
+
+.logo {
+    grid-area: logo;
+    text-decoration: none;
+}
+
+.menu-btn {
+    display: none;
+}
+/*****************
+ *  Mobile Menu  *
+ *****************/
+.menu {
+    display: grid;
+    max-height: none;
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: end;
+    width: 100%;
+    grid-area: menu;
+    text-align: center;
+    align-self: center;
+}
+
+
+
+/* menu icon */
+.menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+    display: none;
+    grid-area: menu-icon;
+}
+
+
+.header .menu-icon .navicon {
+    background: #FFF;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 30px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #FFF;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+    margin-top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -10px;
+}
+
+/* menu btn */
+
+.menu  a {
+    /*text-transform: uppercase;*/
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.4rem;
+    /*margin: 0 1rem;*/
+    /*padding: 0 .2rem; */
+    font-weight: 400;
+}
+
+.menu  a span {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.menu  a span::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    font-weight: 600;
+    transform: translate3d(0,0,0);
+}
+
+
+.menu a:hover span,
+.menu a:focus span {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.menu a:last-child  {
+    margin-right: 0;
+}
+
+
+.logo {
+    display:flex;
+    align-items: center;
+    width: 20%;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.header  h1 {
+    font-size: 2.8rem;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 0.4rem;
+    color: #FFF;
+}
+
+.sticky {
+    position: fixed;
+    background-color: #000;
+    padding: .6rem 4rem;
+    top: -3rem;
+    transform: translateY(3rem);
+    transition: transform 500ms ease, background 500ms ease;
+    z-index: 20;
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+/****************************
+*  Feature Teaser Section  *
+****************************/
+.feature-teaser {
+
+        background: radial-gradient( rgba(255, 255, 255, 0.5) 10%, rgba(255, 255, 255, 1) 90% ),url('../images/sticky-notes-feature.jpg');
+}
+
+
+/*******************
+ *  Footer Styles  *
+ *******************/
+
+.footer {
+    background-color: #120F0E;
+    padding: 4rem;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer a {
+    color: #FFF;
+}
+
+.footer ul {
+    display: flex;
+}
+
+.footer ul li {
+    margin-left: 3rem;
+}
+
+.footer ul li:last-child {
+    margin-left: auto;
+}
+@media only screen and (min-width: 450px)and (max-width: 800px) {
+    .footer {
+        padding:2rem 1rem;
+        letter-spacing:1px;
+    }
+
+    .footer ul li {
+        margin-left: 0.8rem;
+    }
+}
+
+@media only screen and (max-width:449px) {
+
+    .footer {
+        padding: 0.2rem;
+        font-size: 0.7rem;
+        padding: 1rem 0;
+    }
+
+    .footer ul{
+        display: block;
+    }
+
+    .footer ul li {
+        margin-left: 1rem;;
+        margin-top: 0.5rem;
+    }
+
+    .footer ul li:last-child {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+}
+
+

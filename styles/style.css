@@ -102,3 +102,12 @@ body {
   top:-0.14em;
   left:10px;
 }
+
+canvas {
+  width: 900px;
+  height: 200px;
+  display: block;
+  position: relative;
+  background: transparent;
+  margin: 40px auto;
+}

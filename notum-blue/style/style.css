@@ -154,10 +154,11 @@ img {
 **********************************************************************/
 
 	.teaser {
-		background: linear-gradient(to right,rgb(50, 130, 245,0.7),rgb(50, 130, 245,0.7)), url('../images/second-bg.jpg');
+	background: linear-gradient(to right,rgb(50, 130, 245,0.7),rgb(50, 130, 245,0.7));
 		background-size: cover;
 		background-position: center bottom;
 	}
+
 
 	.teaser-container {
 		display: grid;
@@ -222,8 +223,8 @@ img {
 		line-height: 40px;
 		padding-left: 10px;
 		position: absolute;
-		left: -8px;
-		top: 100px;
+		left: 68px;
+		top: 50px;
 		background: #EA5C5D;
 		color: #FFF;
 		font-size: 1.4rem;
@@ -276,7 +277,7 @@ img {
 			grid-template-areas:" header header"
 								" teaser-content teaser-image"
 								" buttons teaser-image";
-			grid-template-columns: 60% 40%;
+			grid-template-columns: 50% 50%;
 		}
 	.teaser-container__buttons {
 	
@@ -303,7 +304,8 @@ img {
 	}
 
 	.teaser-container__image {
-		width: 70%;
+		width: 100%;
+		height: 100%;
 		justify-self: start;
 	}
 }
@@ -371,7 +373,7 @@ img {
 	****/
 
 	.feature-list {
-		background: linear-gradient(to right,rgb(50, 130, 245,0.7),rgb(50, 130, 245,0.7)), url('../images/second-bg.jpg');
+		background: linear-gradient(to right,rgb(50, 130, 245,0.7),rgb(50, 130, 245,0.7));
 		background-size: cover;
 		background-position: center bottom;
 		color: #FFF;

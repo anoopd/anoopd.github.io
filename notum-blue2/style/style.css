@@ -50,6 +50,7 @@ img {
 		width:100%;
 		padding: 0 1rem;
 		z-index: 1000;
+        align-self:flex-start;
 	}
 	.logo h1 {
 		color: #FFF;
@@ -78,10 +79,16 @@ img {
 		display: flex;
 		grid-area: logo;
 		align-self: center;
+        align-items: flex-end;
 	}
 
+    .logo  span {
+        color: red;
+    }
+
 	.logo img {
-		width: 30px;
+		width: 45px;
+        height: 45px;
 		margin-right: .5rem;
 	}
 
@@ -206,9 +213,9 @@ img {
 	}
 
 	.teaser-container__content h1 {
-		font-size: 2.5rem;
+		font-size: 2.2rem;
 		font-weight: 400;
-		margin-top: 100px;
+		margin-top: 1.4rem;
 		padding: 3rem 1rem;
 		color: #FFF;
 		font-weight: 700;
@@ -267,7 +274,8 @@ img {
 	@media screen and (min-width:500px) and (max-width:899px){
 
 		.teaser-container__content h1 {
-			font-size: 3rem;
+			font-size: 2.7rem;
+            margin-top: 50px;
 		}
 		
 	.teaser-container__buttons {
@@ -277,7 +285,12 @@ img {
 }
 	@media screen and (min-width:900px) {
 
+        .logo {
+            align-items: flex-start;
+        }
+
 		.teaser-container {
+            min-height: 600px;
 			grid-template-areas:" header header"
 								" teaser-content teaser-image"
 								" buttons teaser-image";
@@ -287,7 +300,7 @@ img {
 	
 		grid-template-columns: 48% 48%;
 		grid-gap: 2%;
-		/*width: 90%;*/
+        width: 70%;
 		/*justify-self:end;*/
 	}
 
@@ -301,7 +314,7 @@ img {
 	}
 
 	.teaser-container__content h1 {
-	font-size: 3.4rem;
+	font-size: 3.1rem;
 	font-weight: 700;
 	padding: 0 3rem;
 	margin-top: 0;
@@ -479,6 +492,7 @@ img {
 	}
 
 	.features-wrapper h3{
+        margin-top: 1rem;
 		grid-area: heading;
 		font-size: 1.5rem;
 		font-weight: 600;
@@ -565,7 +579,7 @@ img {
 		}
 
 		.header {
-			position: static;
+            position: static;
 			background: transparent;
 			grid-template-areas: "logo menu1";
 			grid-template-columns: 50% 50%;
@@ -622,8 +636,8 @@ img {
 
         .logo span {
             color: red;
-            font-weight: bold;
-            margin-top: 1rem;
+            /*font-weight: bold;*/
+            /*margin-top: 1rem;*/
         }
 
 		.features-wrapper li  {

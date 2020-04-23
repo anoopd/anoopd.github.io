@@ -45,12 +45,14 @@ var scene = new ScrollMagic.Scene({
 var action1 = gsap.timeline()
 
 action1.from('.features-wrapper h3',{opacity:0,y:-20,ease:'power1.inOut'})
-.from('.list_one',{opacity:0, stagger:0.05})
-.from('.list_two',{opacity:0, stagger:0.05})
+.from('.list_one h4',{opacity:0, x:-20, ease: 'power1.inOut'})
+.from('.list_two h4',{opacity:0, x:20, ease: 'power1.inOut'})
+.from('.list_one ul li',{opacity:0, y:20, stagger:0.1})
+.from('.list_two ul li',{opacity:0, y:20, stagger:0.1})
 .from('.features-wrapper img',{ opacity: 0, y:'100%',ease:'Expo.easeInOut' })
      
 var scene1 = new ScrollMagic.Scene({
-    triggerElement: '.list_one',
+    triggerElement: '.features-wrapper h3',
     reverse: false
 
 }).setTween(action1)

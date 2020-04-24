@@ -170,8 +170,8 @@ img {
 	.teaser-container {
 		display: grid;
 		grid-template-areas: "teaser-content"
-							 "buttons"
-							"teaser-image";
+							"teaser-image"
+							 "buttons";
 		position: relative;
 	}
 
@@ -206,10 +206,11 @@ img {
 
 	.teaser-container__buttons {
 		display: grid;
-		padding: 1rem 0;
+		/*padding: 1rem 0;*/
 		width: 50%;
 		justify-self:center;
 		grid-area: buttons;
+        z-index: 200;
 	}
 
 	.teaser-container__content h1 {

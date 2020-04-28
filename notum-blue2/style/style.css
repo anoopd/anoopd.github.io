@@ -83,7 +83,7 @@ img {
 	}
 
     .logo  span {
-        color: red;
+        color: rgba(255,0,0,0.6);
     }
 
 	.logo img {
@@ -161,7 +161,7 @@ img {
 **********************************************************************/
 
 	.teaser {
-	background: linear-gradient(to right,rgb(50, 130, 245,0.7),rgb(50, 130, 245,0.7));
+    background-color: rgb(50, 130, 245,0.9);
 		background-size: cover;
 		background-position: center bottom;
         min-height: 500px;
@@ -301,7 +301,7 @@ img {
 		}
 	.teaser-container__buttons {
 	
-		grid-template-columns: 48% 48%;
+		grid-template-columns: 42% 42%;
 		grid-gap: 2%;
         width: 70%;
 		/*justify-self:end;*/
@@ -317,8 +317,8 @@ img {
 	}
 
 	.teaser-container__content h1 {
-	font-size: 3.1rem;
-	font-weight: 700;
+	font-size: 2.5rem;
+	font-weight: 600;
 	padding: 0 3rem;
 	margin-top: 0;
 	}
@@ -392,6 +392,14 @@ img {
 	}
 
 
+@media screen and (min-width: 550px) {
+    .details-wrapper {
+        padding: 2rem 2.5rem;
+    }
+}
+
+
+
 
 	@media screen and (min-width:900px) {
 
@@ -400,10 +408,12 @@ img {
 		}
 
 		.details-wrapper__content {
-			align-self:center;
-		grid-template-areas:"details-blue-heading details-blue-heading"
-							"details-image details-black-heading"
-							"details-image details-ul";
+            align-self:center;
+            grid-template-areas:"details-blue-heading details-blue-heading"
+            "details-black-heading details-image "
+            "details-ul details-image ";
+
+            justify-self: center;
 		}
 
 		.details-wrapper__content h4 {
@@ -424,8 +434,13 @@ img {
 		}
 
 		.details-wrapper__image {
-			width: 80%;
+            align-self: center;
+			width: 100%;
 		}
+
+        .details-wrapper__image img{
+            width: 80%;
+        }
 
 		.details-wrapper__content ul {
 			width: 80%;
@@ -438,8 +453,9 @@ img {
 	* Features Section *
 	****/
 
+    
 	.feature-list {
-		background: linear-gradient(to right,rgb(50, 130, 245,0.7),rgb(50, 130, 245,0.7));
+ background-color: rgb(50, 130, 245,0.9);
 		background-size: cover;
 		background-position: center bottom;
 		color: #FFF;
@@ -480,7 +496,7 @@ img {
 	}
 
 	.features-wrapper {
-		padding: 4rem 0.8rem 1rem 0.8rem;
+		padding: 6rem 0.8rem 0 .8rem;
 		display: grid;
 		grid-template-areas: "heading heading"
 							 "list-one list-one"
@@ -507,12 +523,13 @@ img {
 
 	
 
-
+    .features-wrapper__one,.features-wrapper__two {
+        margin-bottom: 2rem;
+    }
 
 
 	.features-wrapper__one,.features-wrapper__two,.features-wrapper__three {
 		display: grid;
-
 	}
 	.features-wrapper__one {
 		grid-column: 1/ span2;
@@ -550,10 +567,10 @@ img {
 	@media screen and (min-width:900px) {
 
 		.features-wrapper {
-			grid-template-areas: "heading heading heading"
-								"list-one feature-image list-two";
+			grid-template-areas: "heading heading "
+								"feature-image list-one";
 
-			grid-template-columns: 30% 40% 30%; 
+			grid-template-columns: 55% 45%; 
 			/*padding-bottom: 9rem;*/
 		}
 
@@ -642,8 +659,12 @@ img {
 		}
 
         .logo span {
-            color: red;
-            /*font-weight: bold;*/
+            color: rgba(255,255,255);
+            background: red;
+            border-radius: 5px;
+            padding: 0 .4rem;
+            font-weight: 400;
+            align-self: bottom;
             /*margin-top: 1rem;*/
         }
 
@@ -656,9 +677,7 @@ img {
 *                              Reviews                               *
 **********************************************************************/
 	.reviews {
-	background: linear-gradient(to right,rgb(50, 130, 245,0.7),rgb(50, 130, 245,0.7));
-    background-size: cover;
-    background-position: center bottom;
+    background-color: rgb(50, 130, 245,0.9);   
     color: #FFF;
     position: relative;
     min-height: 300px;
@@ -674,7 +693,7 @@ img {
 **********************************************************************/
 
 	.footer {
-		background: linear-gradient(to right,rgb(50, 130, 245,0.7),rgb(50, 130, 245,0.7));
+         background-color: rgb(50, 130, 245,0.9);
 		padding: 1rem;
 	}
 
@@ -911,6 +930,154 @@ img {
         width: 80%;
         /*border: 1px solid;*/
         margin: 0 auto;
+    }
+
+}
+
+.featureshome-wrapper {
+    display: grid;
+    font-size: 1.2rem;
+    padding:0.8rem;
+}
+
+@media screen and (min-width: 550px) {
+    .featureshome-wrapper {
+        padding: 2rem 0 0  2.5rem;
+        font-size: 1.4rem;
+        grid-template-columns: repeat(3,30%);
+        grid-gap: 3%;
+    }
+   
+    .featureshome-wrapper p{
+        text-align: center;
+    }
+}
+
+/**********************************************************************
+*                      Styles for Features Page                      *
+**********************************************************************/
+
+
+.features{
+		background-color: rgb(50, 130, 245,0.9);
+		color: #FFF;
+		position:relative
+	}
+
+	.features .notum-divider .notum-row-divider {
+		width: 100%;
+		height: 100%;
+	}
+
+    .feature-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+      margin: 0px auto;
+      padding-top: 80px;
+    }
+
+    .feature-1,
+    .feature-2,
+    .feature-3,
+    .feature-4,
+    .feature-5,
+    .feature-6 {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .feature-1 p,
+    .feature-2 p,
+    .feature-3 p,
+    .feature-4 p,
+    .feature-5 p,
+    .feature-6 p {
+        font-size: 1.2rem;
+        padding: .7rem 0;
+    }
+
+    .feature-1 ul li,
+    .feature-2 ul li,
+    .feature-3 ul li,
+    .feature-4 ul li,
+    .feature-5 ul li,
+    .feature-6 ul li {
+       font-size: 1.2rem;
+       padding: .4rem 0;
+       color: #222;
+}
+
+
+    .feature-1 ul li:before,
+    .feature-2 ul li:before,
+    .feature-3 ul li:before,
+    .feature-4 ul li:before,
+    .feature-5 ul li:before,
+    .feature-6 ul li:before {
+    content: '\f058';
+    font-family: 'FontAwesome';
+    float: left;
+    margin: 0 .25em;
+}
+
+
+    .feature-1 h3,
+    .feature-2 h3,
+    .feature-3 h3,
+    .feature-4 h3,
+    .feature-5 h3,
+    .feature-6 h3 {
+
+        color: rgb(50, 130, 245,0.7);
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+@media screen and (min-width: 900px) {
+
+    .feature-wrapper,
+    .feature-1,
+    .feature-2,
+    .feature-3,
+    .feature-4,
+    .feature-5,
+    .feature-6 {
+        flex-direction: row;
+        /*align-items: baseline;*/
+        margin: 2rem;
+        border: 1px solid;
+    }
+
+    .feature-1__image,
+    .feature-2__image,
+    .feature-3__image,
+    .feature-4__image,
+    .feature-5__image,
+    .feature-6__image {
+        flex-basis: 47%;
+    }
+.feature-1__content,
+    .feature-2__content,
+    .feature-3__content,
+    .feature-4__content,
+    .feature-5__content,
+    .feature-6__content {
+        flex-basis: 40%;
+    }
+
+    .feature-wrapper {
+        padding-top: 0px;
+    }
+
+    .feature-content,.feature-1__content{
+        width: 90%;
+    }
+
+    .feature-content h2 {
+        font-weight: 500;
+        font-size: 1.8rem;
     }
 
 }

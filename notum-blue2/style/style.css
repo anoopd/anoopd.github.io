@@ -490,8 +490,9 @@ img {
 
 	.features-wrapper li:before,.details-wrapper li:before {
 		content: '\f058';
-		font-family: 'Font Awesome 5 Free';
+		font-family: 'Font Awesome 5 Regular';
 		float: left;
+        font-weight: 900;
 		margin: 0 .25em;
 	}
 

@@ -301,7 +301,7 @@ img {
 		}
 	.teaser-container__buttons {
 	
-		grid-template-columns: 42% 42%;
+		grid-template-columns: 40% 40%;
 		grid-gap: 2%;
         width: 70%;
 		/*justify-self:end;*/
@@ -439,7 +439,7 @@ img {
 		}
 
         .details-wrapper__image img{
-            width: 80%;
+            width: 70%;
         }
 
 		.details-wrapper__content ul {
@@ -544,7 +544,6 @@ img {
 
 
 	.svg {
-		width: 110px;
 		justify-self: center;
 	}
 
@@ -599,7 +598,7 @@ img {
 			grid-column:3;
 		}
 		.svg {
-			width: 200px;
+			width: 100%;
 		}
 
 		.header {
@@ -613,7 +612,7 @@ img {
 
 		.header ul {
 			display: grid;
-			grid-template-columns: repeat(4,1fr);
+			grid-template-columns: repeat(3,1fr);
 			overflow: visible;
 		}
 		.header .menu-icon {
@@ -624,6 +623,13 @@ img {
 			border: none;
 			text-align: center;
 		}
+
+         .business {
+            font-weight: bold;
+            background-color: #FFF;
+            color: rgb(50, 130, 245,0.9)!important;
+            border-radius: 50px;
+        }
 
 		.menu li a::before,.menu li a::after {
 			display: inline-block;

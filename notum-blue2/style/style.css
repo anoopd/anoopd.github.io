@@ -490,7 +490,7 @@ img {
 
 	.features-wrapper li:before,.details-wrapper li:before {
 		content: '\f058';
-		font-family: 'FontAwesome';
+		font-family: 'Font Awesome 5 Free';
 		float: left;
 		margin: 0 .25em;
 	}

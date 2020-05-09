@@ -7,7 +7,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 *, *:before, *:after {
@@ -409,10 +409,9 @@ img {
 		.details-wrapper__content {
             align-self:center;
             grid-template-areas:"details-blue-heading details-blue-heading"
-            "details-black-heading details-image "
             "details-ul details-image ";
-
             justify-self: center;
+            align-self:center;
 		}
 
 		.details-wrapper__content h4 {
@@ -561,9 +560,16 @@ img {
 		.features-wrapper p {
 			font-size: 1.4rem;
 		}
+
+       
+        
 	}
 
 	@media screen and (min-width:900px) {
+
+        .list_one {
+            margin-bottom: 5rem;
+        }
 
 		.features-wrapper {
 			grid-template-areas: "heading heading "
@@ -605,7 +611,7 @@ img {
             position: static;
 			background: transparent;
 			grid-template-areas: "logo menu1";
-			grid-template-columns: 60% 40%;
+			grid-template-columns: 40% 60%;
 			padding: 2rem 5.3%;
 			grid-area: header;
 		}
@@ -678,6 +684,13 @@ img {
 			padding:0.6rem 0;
 		}
 	}
+@media screen and (min-width:1260px) {
+
+    .header {
+        grid-template-columns: 60% 40%;
+    }
+}
+
 
 /**********************************************************************
 *                              Reviews                               *
@@ -956,6 +969,7 @@ img {
    
     .cont  p{
         text-align: center;
+        font-size: 1.7rem;
     }
 }
 

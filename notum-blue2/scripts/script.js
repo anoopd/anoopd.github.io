@@ -1,3 +1,18 @@
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#eaf7f7",
+      "text": "#5c7291"
+    },
+    "button": {
+      "background": "#56cbdb",
+      "text": "#ffffff"
+    }
+  },
+  "theme": "classic"
+});
+
+
 var mySwiper = new Swiper('.swiper-container', {
     speed: 400,
     loop: true,
@@ -30,13 +45,13 @@ var controller = new ScrollMagic.Controller();
 
 
 var action = gsap.timeline()
-
+action.timeScale(1.5)
 action.from('.features-wrapper__one .svg',{opacity:0,y:-20, ease:'power1.inOut'})
 .from('.features-wrapper__one .cont',{opacity:0,y:10,ease:'poser1.inOut'})
 .from('.features-wrapper__two',{opacity:0,y:-20, ease:'power1.inOut'})
 .from('.features-wrapper__two .cont',{opacity:0,y:10,ease:'poser1.inOut'})
 .from('.features-wrapper__three',{opacity:0,y:-20, ease:'power1.inOut'})
-.from('.features-wrapper__three.cont',{opacity:0,y:10,ease:'poser1.inOut'})
+.from('.features-wrapper__three .cont',{opacity:0,y:10,ease:'poser1.inOut'})
 
 
 var scene = new ScrollMagic.Scene({

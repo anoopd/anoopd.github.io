@@ -37,8 +37,6 @@ img {
 *                           Header Section                           *
 **********************************************************************/
 
-.main-container {
-	}
 .header {
 		display: grid;
 		grid-template-areas: "logo menu"
@@ -157,6 +155,12 @@ img {
 }
 
 /**********************************************************************
+*                           All Containers                           *
+**********************************************************************/
+
+   
+
+/**********************************************************************
 *                           Teaser Section                           *
 **********************************************************************/
 
@@ -173,6 +177,7 @@ img {
 		grid-template-areas: "teaser-content"
 							"teaser-image"
 							 "buttons";
+                             
 		position: relative;
         /*min-height: 700px;*/
 	}
@@ -182,6 +187,7 @@ img {
         /*position: absolute;*/
 		width: 100%;
 		bottom: 0;
+        padding-top: 4rem;
 	}
 
 	.notum-divider1 {
@@ -276,6 +282,7 @@ img {
 }
 	@media screen and (min-width:500px) and (max-width:899px){
 
+       
 		.teaser-container__content h1 {
 			font-size: 2.7rem;
             margin-top: 50px;
@@ -288,6 +295,8 @@ img {
 }
 	@media screen and (min-width:900px) {
 
+        
+
         .logo {
             align-items: flex-start;
         }
@@ -297,7 +306,7 @@ img {
 			grid-template-areas:" header header"
 								" teaser-content teaser-image"
 								" buttons teaser-image";
-			grid-template-columns: 50% 50%;
+			grid-template-columns: 40% 60%;
 		}
 	.teaser-container__buttons {
 	
@@ -890,13 +899,8 @@ img {
 		font-weight: 500;
 	}
 
-	.swiper-container {
-		width: 100%;
-        /*border: 1px solid;*/
-	}
 
 	.swiper-slide {
-		text-align: center;
 		width: 80%;
         /*border: 1px solid;*/
         align-self: center;
@@ -908,17 +912,7 @@ img {
         width: 80%;
     }
 
-	.swiper-slide p {
-    color: #fff;
-    font-size: 24px;
-    line-height: 34px;
-    font-weight: 400;
-    margin: 1rem auto;
-    /*padding: 0 40px;*/
-    /*display: block;*/
-    /*width: 100%;*/
-}
-
+	
 .swiper-slide .review {
     font-size: 1.4rem;
 }
@@ -931,8 +925,8 @@ img {
 
 @media screen and (min-width: 550px) {
 
-	.swiper-container {
-		width: 90%;
+	.swiper2{
+		width: 100%;
 	}
 
 
@@ -940,9 +934,6 @@ img {
 
 @media screen and (min-width: 900px) {
 
-	.swiper-container {
-		width: 90%;
-	}
 
     .review{
         text-align: center;
@@ -1003,9 +994,34 @@ img {
     .feature-4,
     .feature-5,
     .feature-6 {
-        display: flex;
-        flex-direction: column;
-        padding: 0.5rem;
+        display: grid;
+        margin: 8rem 3rem;
+        /*border: 1px solid;*/
+        /*flex-direction: column;*/
+        /*padding: 0.5rem;*/
+        justify-content: space-between;
+    }
+
+.feature-2,.feature-4{
+        grid-template-columns: 42% 53%;
+        grid-column-gap: 5%;
+    }
+
+
+    .feature-3,.feature-5 {
+        grid-template-columns: 53% 42%;
+        grid-column-gap: 5%;
+    }
+
+    .feature-1 h2,
+    .feature-2 h2,
+    .feature-3 h2,
+    .feature-4 h2,
+    .feature-5 h2,
+    .feature-6 h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
     }
 
     .feature-1 p,
@@ -1014,11 +1030,10 @@ img {
     .feature-4 p,
     .feature-5 p,
     .feature-6 p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         padding: .7rem 0;
     }
-
-    .feature-1 ul li,
+     .feature-1 ul li,
     .feature-2 ul li,
     .feature-3 ul li,
     .feature-4 ul li,
@@ -1026,6 +1041,17 @@ img {
     .feature-6 ul li {
        font-size: 1.2rem;
        padding: .4rem 0;
+       color: #222;
+    }
+
+    .feature-1 ul ,
+    .feature-2 ul ,
+    .feature-3 ul ,
+    .feature-4 ul ,
+    .feature-5 ul ,
+    .feature-6 ul  {
+       font-size: 1.2rem;
+       padding: .4rem 1rem;
        color: #222;
 }
 
@@ -1051,50 +1077,20 @@ img {
     .feature-6 h3 {
 
         color: rgb(50, 130, 245,0.7);
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: 600;
     }
 
 @media screen and (min-width: 900px) {
 
-    .feature-wrapper,
-    .feature-1,
-    .feature-2,
-    .feature-3,
-    .feature-4,
-    .feature-5,
-    .feature-6 {
-        flex-direction: row;
-        /*align-items: baseline;*/
-        margin: 2rem;
-        border: 1px solid;
+    .feature-1{
+        margin-top: 5rem;
     }
 
-    .feature-1__image,
-    .feature-2__image,
-    .feature-3__image,
-    .feature-4__image,
-    .feature-5__image,
-    .feature-6__image {
-        flex-basis: 47%;
+    .feature-content h1 {
+        font-size: 2.8rem;
     }
-.feature-1__content,
-    .feature-2__content,
-    .feature-3__content,
-    .feature-4__content,
-    .feature-5__content,
-    .feature-6__content {
-        flex-basis: 40%;
-    }
-
-    .feature-wrapper {
-        padding-top: 0px;
-    }
-
-    .feature-content,.feature-1__content{
-        width: 90%;
-    }
-
+   
     .feature-content h2 {
         font-weight: 500;
         font-size: 1.8rem;
@@ -1102,36 +1098,5 @@ img {
 
 }
 
-
-/**********************************************************************
-*                          Styles for Tabs                           *
-**********************************************************************/
-
-    .tabs-content .swiper-container {
-  width: 100%;
-  height: 300px;
-}
-.tabs-content .swiper-slide {
-  padding: 1rem 2rem;
-}
-.tabs-buttons {
-  height: auto;
-  box-shadow: inset 0 -2px #e6e6e6;
-}
-.tabs-buttons .swiper-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-.tabs-buttons .swiper-slide {
-  width: auto;
-  height: auto;
-  padding: 1rem 2rem;
-  cursor: pointer;
-  border-bottom: 2px solid transparent;
-}
-.tabs-buttons .active-tab {
-  opacity: 1;
-  border-bottom-color: red;
-}
 
 

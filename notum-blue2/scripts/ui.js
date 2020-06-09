@@ -1,34 +1,37 @@
-//Get all tabs
-const tabs = document.querySelectorAll('.tab-container');
-const cards = document.querySelectorAll('.card-container');
+//Features Sub Menu
 
-//let activeTab  = document.querySelector('.tabs-container').querySelector('.active');
-//let activeCard = document.querySelector('.cards-container').querySelector('.active');
-
-
-// Add Event Listener to tabs
-tabs.forEach(function(tab,index) {
-
-    
-
-    tab.addEventListener('click',function(e) {
+//1. Get the Features list and add Click event 
+let featured_link  = document.getElementById('drop-down');
+let dropdown = document.getElementById('dropdownmenu');
 
 
-        let activeTab  = document.querySelector('.tabs-container').querySelector('.active');
-        let activeCard = document.querySelector('.cards-container').querySelector('.active');
+function displayDropdown() {
+    dropdown.className = 'dropdown';
+}
 
-        if(e.target.classList.contains('active')) {
+function removeDropdown() {
+    dropdown.className = "dropdown none";
+}
 
-            // break
-        } else {
-            activeTab.classList.remove('active');
-            console.log(index); 
-            activeCard.classList.remove('active');
-             let test = document.querySelectorAll(`[data-id="${index}"]`);
-             
-             console.log(test);
-            e.target.classList.add('active');
-            test[0].classList.add('active')
-        }
-    })
-})
+function toggleDropdown() {
+    dropdown.classList.toggle('drop-down__menu')
+}
+
+var x = window.matchMedia("(max-width: 900px)");
+
+
+    if(x.matches) {
+
+        console.log( 'Under 900' )
+        featured_link.onclick = toggleDropdown;
+    }  else {
+
+        console.log( 'Above 900' )
+
+
+featured_link.onmouseover = displayDropdown;
+featured_link.onmouseout = removeDropdown;
+
+
+
+    }

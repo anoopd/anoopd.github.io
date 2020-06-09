@@ -90,3 +90,12 @@ var scene2 = new ScrollMagic.Scene({
 }).setTween(action2)
 .addTo(controller)
 
+
+
+
+
+          //}
+
+
+
+

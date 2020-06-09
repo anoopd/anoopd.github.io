@@ -33,7 +33,14 @@
 				<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 					<ul class="menu">
 						<li><a href="index.html">Home</a></li>
-						<li><a href="features.html">Features</a></li>
+						<li id="drop-down"><a >Features</a>
+                        
+                            <ul class="drop-down__menu" id="dropdownmenu">
+                                <li><i class="fa fa-mobile"></i><a href="feature-mobile.html">Notum - Mobile</a></li>
+                                <li><i class="fa fa-desktop"></i><a href="feature-business.html">Notum - Business</a></li>
+                            </ul>
+
+                        </li>
 						<li><a class="business" href="https://admin.notum.life/">Business Login</a></li>
 					</ul>
 			</header>
@@ -443,5 +450,6 @@ Notum is a tool which provide a centralized view of various forms of messages se
 		</div>
         <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
         <script src="./scripts/script.js"></script>
+           <script src="./scripts/ui.js"></script>
 	</body>
 </html>

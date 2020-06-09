@@ -37,6 +37,7 @@ img {
 *                           Header Section                           *
 **********************************************************************/
 
+
 .header {
 		display: grid;
 		grid-template-areas: "logo menu"
@@ -59,20 +60,49 @@ img {
 	.menu-btn {
 		display: none;
 	}
-	.header ul {
+	.header > ul {
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
 		grid-area: menu1;
 		max-height: 0;
+        /*padding-bottom: 0.5rem;*/
 	}
-	.header li a {
+
+    .none {
+        display: none;
+    }
+
+	.header > ul > li > a {
 		display: block;
-		padding: 10px;
+		padding: 10px 0;
 		color: #FFF;
 		border-top: 1px solid #FFF;
 		text-decoration: none;
 	}
+
+
+    .drop-down__menu {
+        display: none;
+        color: #FFF;
+    }
+
+    .open {
+        display:block;
+    }
+
+    
+    .header ul li ul li {
+        padding: 0.5rem 3rem;
+        color: #FFF;
+    }
+
+    .header ul li ul li a {
+        text-decoration: none;
+        color: #FFF;
+        margin-left: 0.5rem;
+    } 
+ 
 	.logo {
 		display: flex;
 		grid-area: logo;
@@ -625,7 +655,36 @@ img {
 			grid-area: header;
 		}
 
-		.header ul {
+
+        #drop-down:hover .drop-down__menu {
+            display: block;
+        }
+
+       
+        #dropdownmenu {
+            position: relative;
+            background-color: #FFF;
+            min-width: 200px;
+            right: 30%;
+            box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.1);
+        }
+
+        #dropdownmenu li {
+            color :#000;
+        }
+
+        
+        #dropdownmenu li a {
+            color: #000;
+        }
+
+        .s2 {
+            overflow: hidden;
+            max-height: 500px;
+        }
+      
+        
+		.header > ul {
 			display: grid;
 			grid-template-columns: repeat(3,1fr);
 			overflow: visible;
@@ -634,10 +693,35 @@ img {
 			display: none;
 		}
 
-		.header li a {
-			border: none;
+		.menu li a {
+			border: none!important;
 			text-align: center;
 		}
+
+                .header ul li ul li {
+    padding: 1rem;
+}
+
+        #dropdownmenu:after{
+            position: absolute;
+            left: 80%;
+            margin-left: 10px;
+            top: -10px;
+            width: 0;
+            height: 0;
+            content:'';
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #FFF;
+        }
+
+        .drop-down__menu li {
+
+        }
+
+        .drop-down__menu li a {
+            color: #000!important;
+        }
 
          .business {
             font-weight: bold;
@@ -646,7 +730,7 @@ img {
             border-radius: 50px;
         }
 
-		.menu li a::before,.menu li a::after {
+		.menu > li a::before,.menu li a::after {
 			display: inline-block;
 			opacity: 0;
 			transition: transform 0.3s, opacity 0.2s;
@@ -658,7 +742,7 @@ img {
 			transform: translateX(20px);
 		}
 
-		.menu li a:hover::before,.menu li a:hover::after {
+		.menu > li a:hover::before,.menu li a:hover::after {
 			opacity: 1;
 			transform: translateX(0px);
 		}
@@ -695,10 +779,7 @@ img {
 	}
 @media screen and (min-width:1260px) {
 
-    .header {
-        grid-template-columns: 60% 40%;
-    }
-}
+   }
 
 
 /**********************************************************************
@@ -988,6 +1069,11 @@ img {
       padding-top: 80px;
     }
 
+    .feature-content h1 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
     .feature-1,
     .feature-2,
     .feature-3,
@@ -995,12 +1081,23 @@ img {
     .feature-5,
     .feature-6 {
         display: grid;
-        margin: 8rem 3rem;
-        /*border: 1px solid;*/
-        /*flex-direction: column;*/
-        /*padding: 0.5rem;*/
-        justify-content: space-between;
+        margin: 2rem 1rem;
+        align-items: center;
     }
+
+@media screen and (min-width:700px)  {
+.feature-1,
+    .feature-2,
+    .feature-3,
+    .feature-4,
+    .feature-5,
+    .feature-6 {
+        margin: 5rem 3rem ;
+    }
+
+}
+
+@media (min-width:1024px) {
 
 .feature-2,.feature-4{
         grid-template-columns: 42% 53%;
@@ -1012,6 +1109,8 @@ img {
         grid-template-columns: 53% 42%;
         grid-column-gap: 5%;
     }
+
+}
 
     .feature-1 h2,
     .feature-2 h2,
@@ -1039,7 +1138,7 @@ img {
     .feature-4 ul li,
     .feature-5 ul li,
     .feature-6 ul li {
-       font-size: 1.2rem;
+       font-size: 1.5rem;
        padding: .4rem 0;
        color: #222;
     }

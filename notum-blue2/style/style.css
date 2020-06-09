@@ -1085,6 +1085,12 @@ img {
         align-items: center;
     }
 
+    .feature-1,.feature-3,.feature-5 {
+        grid-template-areas:
+        "right-content"
+        "left-image";
+    }
+
 @media screen and (min-width:700px)  {
 .feature-1,
     .feature-2,

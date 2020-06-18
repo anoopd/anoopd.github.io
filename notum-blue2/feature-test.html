@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title></title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+        <style>
+   
+          .swiper-container {
+    width: 90%;
+    height: 100%;
+    margin-top: 5rem;
+}
+
+          section {
+             display: flex;
+          }
+
+          .swiper-pagination {
+              position: absolute;
+              top: -10px;
+              right: 10px;
+              width: auto !important;
+              left: auto !important;
+              margin: 0;
+          }
+.swiper-pagination-bullet {
+	padding: 5px 10px;
+	border-radius: 0;
+	width: auto;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 22px;
+	color:#000;
+	opacity: 1;
+	background: rgba(0,0,0,0.2);
+}
+.swiper-pagination-bullet-active {
+	color:#fff;
+	background: #007aff;
+}
+
+        </style>
+    </head>
+    <body>
+        <!-- Slider main container -->
+<div class="swiper-container">
+
+<!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+
+
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+
+            <div class="slide-wrapper">
+
+
+   <section class="feature-1">
+        <div class="feature-1__content">
+        <p>Notum was born out of a desire to simplify the communication between businesses and their customers.</p> 
+        <p>We  provided small  businesses with a  complete  platform  to  manage  all  aspects  of  the Business from  a single portal. Be it managing your contacts, communicating with your customers, sending reminders, or setting up appointments,you can do all of these from a single application. Thus,allowing you to attain customer satisfaction and manage your Business effortlessly.</p>
+        </div>
+        <div class="feature-1__image" ><img src="./images/webscreens/CreateEvent.png" alt=""></div>
+    </section><!-- Section End -->
+
+    <section class="feature-2">
+        <div class="feature-2__content">
+            <h3>
+                Manage Contacts and customers
+            </h3>
+            <ul>
+            <li>
+                Search for your customers and contacts.
+            </li>
+            <li>
+                Import your existing contacts to Notum
+            </li>
+            <li>
+                Arrange your contacts into groups for targeted Communication and easy organization.
+            </li>
+            </ul>
+
+        </div>
+        <div class="feature-2__image" ><img src="images/webscreens/RecMsg.png" alt=""></div>
+        </section><!-- Section End -->
+
+    <section class="feature-3">
+        <div class="feature-3__content">
+            <h3>
+                Easy Two-way Communicationwith your customers
+            </h3>
+
+            <ul>
+                <li>
+                    Choose specific message types for maximum customer engagement.For Example:Reminder, Alert, Promotion,etc. 
+                </li>
+
+                <li>
+                    Personalize the messages that you send to your customers. 
+                </li>
+                <li>
+                    Your messages will be auto formatted and delivered based on your customer’s preferred Communication channel. 
+                </li>
+
+                <li>
+                    Notify customers about Appointments periodically to avoid No Shows.
+                </li>
+                <li>
+                    Ability to Automate and schedule messages to selected contacts or groups
+                </li>
+            <li>
+                Assign priorities to your messages to indicate their level of importance
+            </li>
+            <li>
+                Get message delivery and read receipts (conditions apply).
+            </li>
+            <li>
+                Customers can sign up for your Business with simple steps.
+            </li>
+            </ul>
+        </div>
+        <div class="feature-3__image"><img src="./images/webscreens/StaffCalendar.png" alt=""></div>
+    </section><!-- Section three  End -->
+
+
+    <section class="feature-4">
+        <div class="feature-4__content">
+            <h3>
+                Scheduling appointments and events
+            </h3>
+            <ul>
+            <li>
+                Ability to set up different types of events with your customers
+            </li>
+            <li>
+                Ability to assign your staff to events. 
+            </li>
+            <li>
+                Ability view and manage all events from the portal
+            </li>
+            <li>
+                Receive RSVPs and know in advance who’s attending your events                 </li>
+            <li>
+                Notum will send automated reminders to your customers for your events.
+            </li>
+            </ul>
+        </div>
+        <div class="feature-4__image" src=""></div>
+        </section><!-- Section End -->
+
+    <section class="feature-5">
+        <div class="feature-5__content">
+            <h3>
+                Manage Staff Logins and Roles
+            </h3>
+        <ul>
+        <li>
+            Create personalized logins for your staff members
+        </li>
+        <li>
+            Assign roles to your staff members to restrict their portal access
+        </li>
+        <li>
+            Every Staff member of your crew will have their personalized dashboard and calendar,where they can view all their schedules with all relevant details.
+        </li>
+        <li>
+            Monitor your staff to customer interactions,ensure Customer engagement.
+        </li>
+        </ul>
+        </div>
+        <div class="feature-5__image"><img src="./images/webscreens/StaffList.png" alt=""></div>
+    </section><!-- Section End -->
+
+
+            </div> <!-- Slide Wrapper End -->
+
+
+
+        </div>
+        <div class="swiper-slide">
+
+            <div class="slide-wrapper">
+
+
+            </div> <!-- Slide Wrapper End -->
+
+        </div>
+        ...
+    </div>
+    
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script>
+
+            var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    loop: true,
+    autoHeight: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+        clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+     })
+
+        </script>
+    </body>
+</html>

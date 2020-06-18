@@ -1,0 +1,237 @@
+:root {
+    --base-color:rgb(50, 130, 245,0.9);
+    --bg-height: 240px;
+
+    /*'Beta'Variables*/
+    --logo-beta-color: rgba(255,0,0,0.6);
+
+    /*Menu Variables*/
+    --menu-bg-color: #2b2b2b;
+    --menu-position: fixed;
+    --menu-temp-columns: "logo menu"
+                         "menu1 menu1";
+    --menu-mobicon-display: block;
+
+}
+
+@media (min-width: 900px) {
+    :root {
+
+        /*Menu Variables*/
+        --menu-bg-color: transparent;
+        --menu-position: static;
+        --menu-temp-columns: "logo menu";
+        --menu-mobicon-display: none;
+
+        /*Beta Variables*/
+    --logo-beta-color: rgba(255,0,0,0.6);
+    }
+}
+/**********************************************************************
+*                            Basic Reset                             *
+**********************************************************************/
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: "Avenir Next", "Helvetica neue", Helvetica, sans-serif;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/**********************************************************************
+*                         Define Backgrounds                         *
+**********************************************************************/
+    
+    .blue-bg {
+        min-height: 400px;   
+        background-color: var(--base-color);
+        position: relative;
+    }
+
+    
+    .top-bg:after{
+        position: absolute;
+        content: '';
+        top:0;
+        left: 0;
+        height: var(--bg-height);
+        width: 100%;
+        background:url(../images/border-bottom.svg) ;
+        background-size: cover;
+        background-position: 50% 0;
+        transform: rotate(180deg);
+    }
+
+    .bottom-bg {
+        background-image: url('../images/border-bottom.svg');
+        background-size: cover;
+        background-position: left 50% bottom 0%;
+    }
+
+    .white-bg {
+        min-height: 400px;
+    }
+
+/**********************************************************************
+*                           The containers                           *
+**********************************************************************/
+
+    .container-1,.container-2,.container-3,.container-4,.container-5 {
+        display: grid;
+        border: 1px solid;
+    }
+
+
+/**********************************************************************
+*                               Header                               *
+**********************************************************************/
+ 
+.header {
+		display: grid;
+		grid-template-areas: "logo menu1"
+                             "menu1 menu1";
+		background-color: var(--menu-bg-color);
+		position: var(--menu-position);
+		top: 0;
+		left: 0;
+		width:100%;
+		padding: 0 1rem;
+		z-index: 1000;
+        align-self:flex-start;
+	}
+	.logo h1 {
+		color: #FFF;
+		font-weight: 400;
+		font-size: 1.5rem;
+		align-self: center;
+	}
+	.menu-btn {
+		display: none;
+	}
+	.header ul {
+		margin: 0;
+		padding: 0;
+        display: block;
+        overflow: hidden;
+		grid-area: menu1;
+		max-height: 0;
+	}
+	.header li a {
+		display: block;
+		padding: 10px;
+		color: #FFF;
+		border-top: 1px solid #FFF;
+		text-decoration: none;
+	}
+	.logo {
+		display: flex;
+		grid-area: logo;
+		align-self: center;
+        align-items: flex-end;
+	}
+
+    .logo  span {
+        color: rgba(255,0,0,0.6);
+    }
+
+	.logo img {
+		width: 45px;
+        height: 45px;
+		margin-right: .5rem;
+	}
+
+/**********************************************************************
+*                   Menu Styles Mobile and Desktop                   *
+**********************************************************************/
+
+    .header .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        /*float: right;*/
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+        grid-area: menu;
+        justify-content: center;
+        justify-self: end;
+    }
+    .header .menu-icon .navicon {
+        background: #FFF;
+        display: var(--menu-mobicon-display);
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 28px;
+    }
+
+    .header .menu-icon .navicon:before,
+    .header .menu-icon .navicon:after {
+        background: #FFF;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .header .menu-icon .navicon:before {
+        top: 8px;
+    }
+
+    .header .menu-icon .navicon:after {
+        top: -8px;
+    }
+
+    .header .menu-btn:checked ~ .menu {
+        max-height: 240px;
+        transition: all 0.3s ease-in-out;
+        margin-top: 0;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
+    .header .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+    }
+    .header .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+    }
+
+/**********************************************************************
+*                            Desktop Menu                            *
+**********************************************************************/
+
+
+@media (min-width: 900px) {
+
+}
+
+

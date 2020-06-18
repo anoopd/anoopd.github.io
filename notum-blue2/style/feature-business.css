@@ -15,6 +15,14 @@
     grid-area: right-content;
 }
 
+.img-round {
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    width: 350px;
+    box-shadow: 6px 6px 10px #ccc;
+
+}
+
 @media screen and (min-width:700px) and (max-width:899px) {
     .feature-content {
         padding: 3rem;
@@ -39,5 +47,9 @@
     .feature-3,.feature-5 {
         grid-template-areas:"left-image right-content"; 
     }
+    .feature-3-m,.feature-5-m {
+        grid-template-areas:"left-image right-content"; 
+    }
+
 }
 

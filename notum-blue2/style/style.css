@@ -1091,6 +1091,26 @@ img {
         "left-image";
     }
 
+    .feature-1-m,
+    .feature-2-m,
+    .feature-3-m,
+    .feature-4-m,
+    .feature-5-m,
+    .feature-6-m {
+        display: grid;
+        margin: 2rem 1rem;
+        align-items: center;
+    }
+
+.feature-3-m,.feature-5-m {
+        grid-template-areas:
+        "right-content"
+        "left-image";
+    }
+
+
+
+
 @media screen and (min-width:700px)  {
 .feature-1,
     .feature-2,
@@ -1113,6 +1133,16 @@ img {
 
     .feature-3,.feature-5 {
         grid-template-columns: 53% 42%;
+        grid-column-gap: 5%;
+    }
+.feature-2-m,.feature-4-m{
+        grid-template-columns: 65% 30%;
+        grid-column-gap: 5%;
+    }
+
+
+    .feature-3-m,.feature-5-m {
+        grid-template-columns: 30% 60%;
         grid-column-gap: 5%;
     }
 
@@ -1185,6 +1215,61 @@ img {
         font-size: 1.8rem;
         font-weight: 600;
     }
+
+
+    .feature-1-m h2,
+    .feature-2-m h2,
+    .feature-3-m h2,
+    .feature-4-m h2,
+    .feature-5-m h2,
+    .feature-6-m h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+
+    .feature-1-m p,
+    .feature-2-m p,
+    .feature-3-m p,
+    .feature-4-m p,
+    .feature-5-m p,
+    .feature-6-m p {
+        font-size: 1.5rem;
+        padding: .7rem 0;
+    }
+    .feature-1-m ul li,
+    .feature-2-m ul li,
+    .feature-3-m ul li,
+    .feature-4-m ul li,
+    .feature-5-m ul li,
+    .feature-6-m ul li {
+       font-size: 1.5rem;
+       padding: .4rem 0;
+       color: #222;
+    }
+
+    .feature-1-m ul ,
+    .feature-2-m ul ,
+    .feature-3-m ul ,
+    .feature-4-m ul ,
+    .feature-5-m ul ,
+    .feature-6-m ul  {
+       font-size: 1.2rem;
+       padding: .4rem 1rem;
+       color: #222;
+}
+    .feature-1-m ul li:before,
+    .feature-2-m ul li:before,
+    .feature-3-m ul li:before,
+    .feature-4-m ul li:before,
+    .feature-5-m ul li:before,
+    .feature-6-m ul li:before {
+    content: '\f058';
+    font-family: 'FontAwesome';
+    float: left;
+    margin: 0 .25em;
+}
+
 
 @media screen and (min-width: 900px) {
 

@@ -1100,6 +1100,7 @@ img {
         display: grid;
         margin: 2rem 1rem;
         align-items: center;
+        justify-content:center;
     }
 
 .feature-3-m,.feature-5-m {

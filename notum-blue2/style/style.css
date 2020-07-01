@@ -1098,9 +1098,19 @@ img {
     .feature-5-m,
     .feature-6-m {
         display: grid;
-        margin: 2rem 1rem;
+        margin: 2rem 7rem;
         align-items: center;
         justify-content:center;
+    }
+
+    .feature-1-m h3{
+      color: rgb(50, 130, 245,0.9);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .feature-1-m img {
+        width: 80%;
     }
 
 .feature-3-m,.feature-5-m {
@@ -1137,8 +1147,8 @@ img {
         grid-column-gap: 5%;
     }
 .feature-2-m,.feature-4-m{
-        grid-template-columns: 65% 30%;
-        grid-column-gap: 5%;
+        grid-template-columns: 60% 30%;
+        grid-column-gap: 10%;
     }
 
 

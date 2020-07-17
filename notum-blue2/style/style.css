@@ -650,7 +650,7 @@ img {
             position: static;
 			background: transparent;
 			grid-template-areas: "logo menu1";
-			grid-template-columns: 40% 60%;
+			grid-template-columns: 50% 50%;
 			padding: 2rem 5.3%;
 			grid-area: header;
 		}
@@ -1209,10 +1209,12 @@ img {
     .feature-4 ul li:before,
     .feature-5 ul li:before,
     .feature-6 ul li:before {
-    content: '\f058';
-    font-family: 'FontAwesome';
-    float: left;
-    margin: 0 .25em;
+	content: '\f058';
+        font-family:'Font Awesome 5 Free';
+		float: left;
+        font-weight: 900;
+		margin: 0 .25em;
+
 }
 
 
@@ -1276,10 +1278,12 @@ img {
     .feature-4-m ul li:before,
     .feature-5-m ul li:before,
     .feature-6-m ul li:before {
-    content: '\f058';
-    font-family: 'Font Awesome 5 Free';
-    float: left;
-    margin: 0 .25em;
+	content: '\f058';
+        font-family:'Font Awesome 5 Free';
+		float: left;
+        font-weight: 900;
+		margin: 0 .25em;
+
 }
 
 
